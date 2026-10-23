@@ -5,8 +5,6 @@
 ![VocabCraft Banner](https://img.shields.io/badge/Streamlit-1.49-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
 ![Google Gemini](https://img.shields.io/badge/Google%20Gemini-2.5%20Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)
 ![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-
 ---
 
 ## ✨ Features
