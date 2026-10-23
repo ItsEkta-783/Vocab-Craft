@@ -102,48 +102,6 @@ Open your browser at `http://localhost:8501`.
 
 ---
 
-## ☁️ Deployment to Streamlit Community Cloud
-
-Deploying VocabCraft is 100% free and takes under 2 minutes:
-
-1. **Push your code to GitHub** (see instructions below).
-2. Go to [share.streamlit.io](https://share.streamlit.io/) and log in with your GitHub account.
-3. Click **"New app"** (or **"Create app"**).
-4. Select your **Repository** (`YOUR_USERNAME/VocabCraft`), **Branch** (`main`), and set **Main file path** to `app.py`.
-5. Under **"Advanced settings"** -> **"Secrets"**, add your Gemini API key:
-   ```toml
-   GEMINI_API_KEY = "AIzaSy..."
-   ```
-6. Click **"Deploy!"**. Your app will be live with a public URL!
-
----
-
-## 📦 Pushing to a New GitHub Repository
-
-Run these exact commands in your terminal from the `VocabCraft` directory:
-
-```bash
-# 1. Initialize Git repository (if not already done)
-git init
-
-# 2. Stage all project files (safe .gitignore prevents committing secrets)
-git add .
-
-# 3. Commit the initial release
-git commit -m "Initial commit: VocabCraft AI Vocabulary Builder"
-
-# 4. Rename default branch to main
-git branch -M main
-
-# 5. Link to your new GitHub repository (replace with your repo URL)
-git remote add origin https://github.com/YOUR_USERNAME/VocabCraft.git
-
-# 6. Push to GitHub
-git push -u origin main
-```
-
----
-
 ## 📂 Project Structure
 
 ```text
@@ -155,14 +113,5 @@ VocabCraft/
 ├── README.md                   # Project documentation
 └── .gitignore                  # Git ignore rules (secrets, venv, cache)
 ```
-
----
-
-## 🛡️ Error Handling & Reliability
-
-- **Input Sanitization**: Protects against non-alphabetical characters, oversized inputs, and sentences.
-- **Quota & API Errors**: Catches rate-limits (HTTP 429) and invalid API keys (HTTP 401/403) with clear user feedback.
-- **Strict Schema Enforcement**: Uses Pydantic schemas with `google-genai` structured outputs (`response_mime_type="application/json"`).
-- **Graceful Fallback**: If offline or unauthenticated, clearly signals Demo Mode with 8 rich offline words without spoofing AI generation.
 
 ---
