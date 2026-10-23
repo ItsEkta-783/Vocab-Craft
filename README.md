@@ -6,6 +6,11 @@
 ![Google Gemini](https://img.shields.io/badge/Google%20Gemini-2.5%20Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)
 ![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)
 ---
+## 🌐 Live Demo
+
+Try VocabCraft here: [**Visit VocabCraft**](https://vocab-craft-e38r4ctzqzpuznh6g4kqjh.streamlit.app/)
+
+Explore new words, learn their meanings, and test your vocabulary with AI-powered quizzes.
 
 ## ✨ Features
 
